@@ -67,7 +67,7 @@ do{
   i++;
 } while(i <= 27);
 
-for(i = 7; i <= 27; i++){
+for(let i = 7; i <= 27; i++){
   console.log(i);
 }
 
@@ -86,7 +86,7 @@ do{
   i += 10;
 } while(i < 100);
 
-for(i = 0; i <= 100; i += 10){
+for(let i = 0; i <= 100; i += 10){
   console.log(i);
 }
 
@@ -107,7 +107,7 @@ while (counterFour > -100) {
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop 
 // (your choice which type) that prints the integers from 0 to that number.
 let favoriteNumber = 12;
-for (i = 0; i <= favoriteNumber; i++) {
+for (let i = 0; i <= favoriteNumber; i++) {
   console.log(i);
 }
 
@@ -121,7 +121,7 @@ for (i = 0; i <= favoriteNumber; i++) {
 // 3 not my favorite number
 // ...
 // (Hint - use an if statement in your loop)
-for(i = 0; i <= 100; i++){
+for(let i = 0; i <= 100; i++){
   if (i == favoriteNumber){
     console.log(i + " my favorite number!");
   } else {
@@ -199,6 +199,14 @@ before completing that block of code is logged. (hence the name "record completi
 https://stackoverflow.com/questions/50993161/
 
 I'll have to do more exploring to figure out the purpose of record completion.
+
+EDIT:
+After starting freecodecamp's ES6 section, I learned about how let is used even within
+sub-scopes like an if-statement, like variable i in for(let i =...) will be undefined 
+once you leave the for loop -- in python this isn't the case
+I was using the same i throughout (at first) b/c it was already declared once,
+and with while + do-while, I already had to reset its value anyways. 
+but it might be better if I practice not doing that
 */
 
 
