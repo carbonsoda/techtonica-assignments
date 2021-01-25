@@ -7,3 +7,18 @@ body {
     background-color: #FDEDF1;
 }
 
+/* 
+Using top instead of p.description due to the description 
+consisting of multiple tags, and that the title is very short
+alt ver: a separate "description" class to encapsulate all
+but the title, 
+*/
+.description {
+    width: 600px;
+}
+
+blockquote {
+    font-style:italic;
+    color: #5c5454;
+}
+
