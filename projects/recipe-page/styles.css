@@ -19,11 +19,18 @@ but the title,
 .left {
     float: left;
     width: 600px;
+    margin-top: 25px;
 }
 
 .right {
     float: right;
+    width: 600px;
+    margin-left: 30px;
 }
 
+blockquote {
+    font-style:italic;
+    color: #5c5454;
+}
 
 
