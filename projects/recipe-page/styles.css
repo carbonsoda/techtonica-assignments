@@ -8,8 +8,8 @@ body {
 }
 
 /* 
-Using top instead of p.description due to the description 
-consisting of multiple tags, and that the title is very short
+The description consists of multiple types besides <p>
+For cleanest/simplest code, wrapping as its own class
 */
 .description {
     width: 600px;
