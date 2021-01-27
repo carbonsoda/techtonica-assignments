@@ -18,6 +18,9 @@ For cleanest/simplest code, wrapping as its own class
 .description {
   margin-top: 30px;
 }
+.title {
+    margin-top:20px;
+}
 
 .left {
   float: left;
