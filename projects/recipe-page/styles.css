@@ -7,6 +7,10 @@ body {
   background-color: #fdedf1;
 }
 
+.navbar {
+    background-color: #3B2B2C;
+}
+
 /* 
 The description consists of multiple types besides <p>
 For cleanest/simplest code, wrapping as its own class
