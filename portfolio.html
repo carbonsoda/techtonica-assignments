@@ -20,22 +20,31 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Avery Miller</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Main</a>
-                <a class="nav-link" href="https://github.com/carbonsoda">Github</a>
-                <a class="nav-link" href="https://www.linkedin.com/in/milleravery/">LinkedIn</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/carbonsoda">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/milleravery/">LinkedIn</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+
 
     <!--OVERVIEW--->
     <div id="overview">
@@ -56,8 +65,10 @@
         <!--Not sure how I want to arrange it yet-->
         <div class="summary detail">
             <p>
-                Throughout all of my technical experiences, I strive to help make people's work better. I love learning how individuals
-                engage with others and their environments; this drive is what led me to my self-designed data science major, with a
+                Throughout all of my technical experiences, I strive to help make people's work better. I love learning
+                how individuals
+                engage with others and their environments; this drive is what led me to my self-designed data science
+                major, with a
                 focus in social psychology. <br>
 
                 My experiences in both IT and academia nurtured my love for people, my love for technology, and
@@ -72,31 +83,33 @@
 
     <!--EXPERIENCES--->
     <!---TODO: ADD SPECIFIC PROJECTS--->
-    <div id="all-experiences">
-
-        <div id="experience">
-            <h4>Research Assistant | 
+    <div id="all-experiences" class="row">
+        <div id="experience" class="col">
+            <h4>Research Assistant |
                 <a href="https://www.github.com/dyscord-lab">Dyscord Lab</a>
             </h4>
             <ul>
                 <li>
-                    Developed a Python script that corrected and               processed raw experimental data. It matched the participant's gaze coordinates with the corresponding image, which were
+                    Developed a Python script that corrected and processed raw experimental data. It matched the
+                    participant's gaze coordinates with the corresponding image, which were
                     shown in random order.
                 </li>
                 <li>
                     Assisted with data wrangling and analysis for experimental data, using Python and R.
                 </li>
                 <li>
-                    Built a multiplayer touchscreen game in Unity and C#, as a team of 3 researchers, for an experiment about teamwork.
+                    Built a multiplayer touchscreen game in Unity and C#, as a team of 3 researchers, for an experiment
+                    about teamwork.
                 </li>
             </ul>
         </div>
 
-        <div id="experience">
+        <div id="experience" class="col">
             <h4> Data Technician | Early Childhood Communication & Development Lab</h4>
             <ul>
                 <li>
-                    Planned and developed applications for research assistants to use in experiments and basic data processing.
+                    Planned and developed applications for research assistants to use in experiments and basic data
+                    processing.
                 </li>
                 <li>
                     Oversaw the lab's IT needs through training, consultations, and general support.
