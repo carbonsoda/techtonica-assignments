@@ -2,11 +2,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+#overview {
+    padding:10px;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
 .summary {
     text-align: center;
 }
 
-/* Hide for now until determine placement*/
-.summary.detail{
-    display: none;
-}
+@media

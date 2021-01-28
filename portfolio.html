@@ -2,24 +2,23 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <!--CUSTOM CSS LINK-->
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
     <title>Avery Miller</title>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -40,84 +39,86 @@
                         <a class="nav-link" href="https://www.linkedin.com/in/milleravery/">LinkedIn</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
-
     <!--OVERVIEW--->
-    <div id="overview">
-        <!--TITLE/HEADER-->
-        <div>
-            <h2>Avery Miller</h2>
+    <div class="container">
+        <div id="overview" class="card overview">
+            <div class="row">
+                <div class="col-6">
+                    <img src="portrait2.png" class="img-fluid" width="300px" />
+                </div>
+                <div class="col-5">
+                    <div class="card-body">
+                        <h3 class="card-title">Avery Miller</h3>
+                        <p class="card-text">
+                            Software Engineer in Training @ Techtonica
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"> Curious about UX / DX </small>
+
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                My experiences in both IT and academia nurtured my love for
+                                people, my love for technology, and my love for learning. <br>
+                                This all
+                                comes together in one of my major goals: <br>
+                                My goal to create
+                                user-friendly experiences, for both the users and developers.
+                                Ultimately technology can help everyone, and I want to help
+                                connect people to it.
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!---SUMMARY-->
-        <div class="summary">
-            <h5>Software Engineer in Training @ Techtonica</h5>
-            <p>
-                Curious about UX / DX
-            </p>
-        </div>
+        <!--EXPERIENCES--->
+        <!---TODO: ADD SPECIFIC PROJECTS--->
+        <div id="all-experiences" class="row">
+            <div id="experience" class="col">
+                <h4>
+                    Research Assistant |
+                    <a href="https://www.github.com/dyscord-lab">Dyscord Lab</a>
+                </h4>
+                <ul>
+                    <li>
+                        Developed a Python script that corrected and processed raw
+                        experimental data. It matched the participant's gaze coordinates
+                        with the corresponding image, which were shown in random order.
+                    </li>
+                    <li>
+                        Assisted with data wrangling and analysis for experimental data,
+                        using Python and R.
+                    </li>
+                    <li>
+                        Built a multiplayer touchscreen game in Unity and C#, as a team of
+                        3 researchers, for an experiment about teamwork.
+                    </li>
+                </ul>
+            </div>
 
-        <!--DETAILED SUMMARY-->
-        <!--Not sure how I want to arrange it yet-->
-        <div class="summary detail">
-            <p>
-                Throughout all of my technical experiences, I strive to help make people's work better. I love learning
-                how individuals
-                engage with others and their environments; this drive is what led me to my self-designed data science
-                major, with a
-                focus in social psychology. <br>
-
-                My experiences in both IT and academia nurtured my love for people, my love for technology, and
-                my love
-                for learning. This all comes together in one of my major goals: My goal to create user-friendly
-                experiences, for
-                both the users and developers. Ultimately technology can help everyone, and I want to help connect
-                people to it.
-            </p>
+            <div id="experience" class="col">
+                <h4>
+                    Data Technician | Early Childhood Communication & Development Lab
+                </h4>
+                <ul>
+                    <li>
+                        Planned and developed applications for research assistants to use
+                        in experiments and basic data processing.
+                    </li>
+                    <li>
+                        Oversaw the lab's IT needs through training, consultations, and
+                        general support.
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <!--EXPERIENCES--->
-    <!---TODO: ADD SPECIFIC PROJECTS--->
-    <div id="all-experiences" class="row">
-        <div id="experience" class="col">
-            <h4>Research Assistant |
-                <a href="https://www.github.com/dyscord-lab">Dyscord Lab</a>
-            </h4>
-            <ul>
-                <li>
-                    Developed a Python script that corrected and processed raw experimental data. It matched the
-                    participant's gaze coordinates with the corresponding image, which were
-                    shown in random order.
-                </li>
-                <li>
-                    Assisted with data wrangling and analysis for experimental data, using Python and R.
-                </li>
-                <li>
-                    Built a multiplayer touchscreen game in Unity and C#, as a team of 3 researchers, for an experiment
-                    about teamwork.
-                </li>
-            </ul>
-        </div>
-
-        <div id="experience" class="col">
-            <h4> Data Technician | Early Childhood Communication & Development Lab</h4>
-            <ul>
-                <li>
-                    Planned and developed applications for research assistants to use in experiments and basic data
-                    processing.
-                </li>
-                <li>
-                    Oversaw the lab's IT needs through training, consultations, and general support.
-                </li>
-            </ul>
-        </div>
-    </div>
-
 </body>
 
 </html>
