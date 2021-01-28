@@ -11,15 +11,20 @@ body {
     background-color: #3B2B2C;
 }
 
+.recipe {
+    border: 1px solid;
+    border-color:rgba(70, 66, 66, 0.5);
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+
 /* 
 The description consists of multiple types besides <p>
 For cleanest/simplest code, wrapping as its own class
 */
-.description, .row {
-    margin-top: 30px;
-}
-.title{
-    margin-top:20px;
+.description, .title, .row {
+    margin-top: 20px;
 }
 
 .left {
@@ -37,5 +42,6 @@ For cleanest/simplest code, wrapping as its own class
 
 blockquote {
   font-style: italic;
+  margin-left:20px;
   color: #5c5454;
 }
