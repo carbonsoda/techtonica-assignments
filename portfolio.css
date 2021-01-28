@@ -12,4 +12,11 @@ body {
     text-align: center;
 }
 
-@media
+@media(min-width:1080px){
+    img {
+        width:300px
+    }
+    #overview {
+        width: 800px;
+    }
+}
