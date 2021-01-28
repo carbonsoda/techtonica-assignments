@@ -1,10 +1,11 @@
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
   font-family: "Roboto Slab", serif;
   text-decoration: underline;
 }
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fdedf1;
+  margin-bottom:10px;
 }
 
 .navbar {
@@ -25,6 +26,7 @@ For cleanest/simplest code, wrapping as its own class
 */
 .description, .title, .row {
     margin-top: 20px;
+    margin-left:-50px;
 }
 
 blockquote {
