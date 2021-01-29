@@ -8,6 +8,9 @@ body {
     margin-bottom: 10px;
     border: 0px !important;
 }
+.card-header{
+    border-color:blueviolet!important;
+}
 
 .border-3{
     border-color:aquamarine!important;
