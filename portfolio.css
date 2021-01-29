@@ -16,6 +16,15 @@ body {
     border-color:aquamarine!important;
 }
 
+.fab {
+    font-size:25px;
+}
+
+.fa-python {
+    color: green;
+}
+
+
 .summary {
     text-align: center;
 }
