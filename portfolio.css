@@ -8,9 +8,24 @@ body {
     margin-bottom: 40px;
     border: 0px !important;
 }
+
 .card-header{
+    background:none;
     border-color:blueviolet!important;
 }
+
+#project-note {
+    font-size:small;
+    margin-bottom: 0;
+}
+#project-note a:link {
+    color:#A0C1D1;
+}
+#project-note a:hover,
+#project-note a:visited {
+    color:#B5B2C2;
+}
+
 
 .border-3{
     border-color:aquamarine!important;
