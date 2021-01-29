@@ -5,7 +5,7 @@ body {
 #overview {
     padding:10px;
     margin-top:20px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     border: 0px !important;
 }
 .card-header{
@@ -16,7 +16,7 @@ body {
     border-color:aquamarine!important;
 }
 
-.fab {
+.icon {
     font-size:25px;
 }
 
@@ -28,6 +28,8 @@ body {
 .summary {
     text-align: center;
 }
+
+
 
 @media(min-width:1080px){
     img {

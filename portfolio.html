@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
@@ -17,8 +18,10 @@
 
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/a0de938357.js" crossorigin="anonymous"></script>
-    <!--CUSTOM CSS LINK-->
+
+    <!--CUSTOM CSS-->
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
+
     <title>Avery Miller</title>
 </head>
 
@@ -49,7 +52,7 @@
 
     <!--OVERVIEW--->
     <div class="container">
-        <div id="overview" class="card">
+        <div id="overview" class="card mx-auto">
             <div class="row">
                 <div class="col-5">
                     <img src="portrait3.png" class="img-fluid rounded-circle border border-3" />
@@ -85,10 +88,39 @@
     <div id="projects" class="container">
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+            <!--PROJECT-1-->
             <div class="col">
                 <div class="card">
                     <div class="card-header bg-transparent">
-                        <i class="fab fa-python"></i>   
+                        <i class="fab fa-python icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://git.io/suandaHSP">
+                                Vignette Generator
+                            </a>
+                        </h5>
+                        <p class="card-text">
+                            Lab managers used this to simplify the preparation process for their human simulation
+                            paradigm studies (HSP). <br>
+                            It provided basic functionality (trimming, removing audio) in a Python GUI, powered by
+                            FFmpeg.
+                        </p>
+                        <p class="card-text"><small class="text-muted">
+                                <a href="https://comdev.uconn.edu/">
+                                    @ UConn Communication & Development lab
+                                </a>
+                            </small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--PROJECT-2-->
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <i class="fab fa-python icon"></i>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
@@ -109,49 +141,31 @@
                     </div>
                 </div>
             </div>
+
+            <!--PROJECT-3-->
             <div class="col">
                 <div class="card">
                     <div class="card-header bg-transparent">
-                        Header
+                        <i class="fab fa-python icon"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Picture Book Object Coding</h5>
+                        <h5 class="card-title">
+                            <a href="https://git.io/PBooks">Picture Book Object Coding</a>
+                        </h5>
+                        <p class="card-text">
+                            My drawing app was used for an experiment regarding communication and perceptions in young
+                            adults.
+                        </p>
                         <p class="card-text">
                             Participants would identify and outline salient objects in children's picture books. Each
                             object was then saved as a
-                            transparent image for later comparative analysis.
+                            transparent image for
+                            later comparative analysis.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header bg-transparent">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional
-                            content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header bg-transparent">
-                        Header
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            his is a longer card with supporting text below as a natural lead-in to
-                            additional
-                            content. This content is a little bit longer.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </body>
