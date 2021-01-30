@@ -11,8 +11,13 @@ body {
     border: 0px !important;
 }
 
-.card-header#project{
+.card-header{
     background:none;
+}
+
+
+.card-header#project{
+    font-size:25px;
     border-color:blueviolet!important;
 }
 
@@ -33,17 +38,8 @@ body {
     border-color:aquamarine!important;
 }
 
-.icon {
-    font-size:25px;
-}
-
 .fa-python {
     color: green;
-}
-
-
-.summary {
-    text-align: center;
 }
 
 
