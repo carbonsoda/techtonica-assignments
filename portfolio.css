@@ -2,10 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
 #overview {
-    padding:10px;
+    padding:1px;
     margin-top:20px;
     margin-bottom: 40px;
     border: 0px !important;
@@ -13,11 +11,15 @@ body {
 
 .card-header{
     background:none;
+    font-size:25px;
 }
 
+.card-header#mainlinks{
+    color:blue;
+    border: 0px !important;
+}
 
 .card-header#project{
-    font-size:25px;
     border-color:blueviolet!important;
 }
 
