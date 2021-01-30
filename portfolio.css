@@ -17,7 +17,13 @@ body {
 .card-header#mainlinks{
     color:blue;
     border: 0px !important;
+    margin-bottom:-10px;
 }
+
+.card-header#mainlinks a:link{
+    text-decoration: none;
+}
+
 
 .card-header#project{
     border-color:blueviolet!important;
