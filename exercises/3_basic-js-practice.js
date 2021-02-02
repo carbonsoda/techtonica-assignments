@@ -17,6 +17,13 @@ function loopThrough(n) {
 /* [Challenge 3] - Number sum
 Define a method called calculateSum to calculate the sum all the digits from 0 to an input number. 
 */
+function calculateSum(n) {
+  let totalSum = 0;
+  for (let i = 1; i <= n; i++) {
+    totalSum += i;
+  }
+  return totalSum;
+}
 
 
 /* [Challenge 4] - FizzBuzz
