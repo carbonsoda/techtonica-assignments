@@ -42,9 +42,12 @@ function fizzbuzz(n) {
 }
 
 /* [Challenge 5] Calculate Factorial Number
-Could also check if n is negative => invalid for factorials
 */
-
+// Could also check if n is negative => invalid for factorials
+function factorial(n) {
+  // 0! == 1
+  return n <= 1 ? 1 : n * factorial(n - 1);
+}
 
 /* [Challenge 6] Switch Statements
 Using a switch statement, write a function called sleep_in(weekday, vacation) with these criteria: The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
