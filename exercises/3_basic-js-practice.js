@@ -82,6 +82,22 @@ console.log(groceries);
 4. After printing the values in step 3, change the values of the second key in every object to something new.
 5. Prove the change worked by printing the second key in each object to the console, which should show the new value. Use bracket-notation to access the values this time.
 */
+function mutateObjs(arr) {
+    for (let obj of arr) {
+        console.log(obj.color);
+        obj.color = "blue";
+        console.log(obj["color"]);
+    }
+}
+
+let friendsArr = [
+    { name: "Alyssa", color: "black", treat: "reeses" },
+    { name: "Jade", color: "green", treat: "cookies" },
+    { name: "Bean", color: "pink", treat: "boba" },
+];
+
+mutateObjs(friendsArr);
+console.log(friendsArr);
 
 /* [Challenge 10] Determine Runtime Complexity
 At the top your document for each challenge, state the runtime complexity for that function.
