@@ -32,7 +32,14 @@ For each multiple of 3, print "Fizz" instead of the number.
 For each multiple of 5, print "Buzz" instead of the number.
 For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
 */
-
+function fizzbuzz(n) {
+  for (let i = 1; i <= n; i++) {
+    let message = "";
+    message += i % 3 == 0 ? "Fizz" : "";
+    message += i % 5 == 0 ? "Buzz" : "";
+    console.log(message.length > 0 ? message : i);
+  }
+}
 
 /* [Challenge 5] Calculate Factorial Number
 Could also check if n is negative => invalid for factorials
