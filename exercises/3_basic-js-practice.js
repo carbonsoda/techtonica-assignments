@@ -3,11 +3,13 @@
 /* [Challenge 1] - Convert Inches to Meters
 Define a function called metersToInches that takes an input of the number of meters and outputs the result of the number of inches. Hint: 1 meter equals 39.3701 inches. 
 */
+// Runtime: O(1)
 let metersToInches = (numMeters) => numMeters * 39.3701;
 
 /* [Challenge 2] - Loop n Times
 Write a function named loopThrough that takes an argument that is a number and loops through and displays a message “Hello World” that number of times. 
 */
+// Runtime: O(n)
 function loopThrough(n) {
     for (let i = 1; i <= n; i++) {
         console.log("Hello World");
@@ -17,6 +19,7 @@ function loopThrough(n) {
 /* [Challenge 3] - Number sum
 Define a method called calculateSum to calculate the sum all the digits from 0 to an input number. 
 */
+// Runtime: O(n)
 function calculateSum(n) {
     let totalSum = 0;
     for (let i = 1; i <= n; i++) {
@@ -31,6 +34,8 @@ For each multiple of 3, print "Fizz" instead of the number.
 For each multiple of 5, print "Buzz" instead of the number.
 For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
 */
+// Runtime: O(n)
+// Runs loop n times, each loop sums up to O(1)
 function fizzbuzz(n) {
     for (let i = 1; i <= n; i++) {
         let message = "";
@@ -42,7 +47,7 @@ function fizzbuzz(n) {
 
 /* [Challenge 5] Calculate Factorial Number
  */
-// Could also check if n is negative => invalid for factorials
+// Runtime: O(n)
 function factorial(n) {
     // 0! == 1
     return n <= 1 ? 1 : n * factorial(n - 1);
@@ -57,6 +62,8 @@ Using a switch statement, write a function called sleep_in(weekday, vacation) wi
 Write a function called common(a, b) with these criteria: 
 Given 2 arrays of ints, a and b, return True if they have the same first element or they have the same last element. Both arrays will be length 1 or more. 
 */
+// Runtime: O(1)
+// Accessing specific indexes in the array
 function common(a, b) {
     return a[0] == b[0] || a[a.length - 1] == b[b.length - 1];
 }
@@ -67,6 +74,7 @@ function common(a, b) {
 3. Delete the first key-value pair in the object.
 4. Log that object to the console again. The first key-value pair should be gone.
 */
+// Runtime: O(1)
 let groceries = {
     store: "the market",
     needs: ["milk", "bread", "eggs"],
@@ -82,8 +90,10 @@ console.log(groceries);
 4. After printing the values in step 3, change the values of the second key in every object to something new.
 5. Prove the change worked by printing the second key in each object to the console, which should show the new value. Use bracket-notation to access the values this time.
 */
+// Runtime: O(n)
+// The for loop runs n times, each loop is O(1) because direct lookups
 function mutateObjs(arr) {
-    for (let obj of arr) {
+    for (let obj of arr) { 
         console.log(obj.color);
         obj.color = "blue";
         console.log(obj["color"]);
