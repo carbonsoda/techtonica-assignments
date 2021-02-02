@@ -8,7 +8,11 @@ let metersToInches = (numMeters) => numMeters * 39.3701;
 /* [Challenge 2] - Loop n Times
 Write a function named loopThrough that takes an argument that is a number and loops through and displays a message “Hello World” that number of times. 
 */
-
+function loopThrough(n) {
+  for (let i = 1; i <= n; i++) {
+    console.log("Hello World");
+  }
+}
 
 /* [Challenge 3] - Number sum
 Define a method called calculateSum to calculate the sum all the digits from 0 to an input number. 
