@@ -3,6 +3,7 @@
 /* [Challenge 1] - Convert Inches to Meters
 Define a function called metersToInches that takes an input of the number of meters and outputs the result of the number of inches. Hint: 1 meter equals 39.3701 inches. 
 */
+let metersToInches = (numMeters) => numMeters * 39.3701;
 
 /* [Challenge 2] - Loop n Times
 Write a function named loopThrough that takes an argument that is a number and loops through and displays a message “Hello World” that number of times. 
