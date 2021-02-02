@@ -9,22 +9,21 @@ let metersToInches = (numMeters) => numMeters * 39.3701;
 Write a function named loopThrough that takes an argument that is a number and loops through and displays a message “Hello World” that number of times. 
 */
 function loopThrough(n) {
-  for (let i = 1; i <= n; i++) {
-    console.log("Hello World");
-  }
+    for (let i = 1; i <= n; i++) {
+        console.log("Hello World");
+    }
 }
 
 /* [Challenge 3] - Number sum
 Define a method called calculateSum to calculate the sum all the digits from 0 to an input number. 
 */
 function calculateSum(n) {
-  let totalSum = 0;
-  for (let i = 1; i <= n; i++) {
-    totalSum += i;
-  }
-  return totalSum;
+    let totalSum = 0;
+    for (let i = 1; i <= n; i++) {
+        totalSum += i;
+    }
+    return totalSum;
 }
-
 
 /* [Challenge 4] - FizzBuzz
 Write a function called fizzbuzz that prints each number from 1 to the input on a new line.
@@ -33,20 +32,20 @@ For each multiple of 5, print "Buzz" instead of the number.
 For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
 */
 function fizzbuzz(n) {
-  for (let i = 1; i <= n; i++) {
-    let message = "";
-    message += i % 3 == 0 ? "Fizz" : "";
-    message += i % 5 == 0 ? "Buzz" : "";
-    console.log(message.length > 0 ? message : i);
-  }
+    for (let i = 1; i <= n; i++) {
+        let message = "";
+        message += i % 3 == 0 ? "Fizz" : "";
+        message += i % 5 == 0 ? "Buzz" : "";
+        console.log(message.length > 0 ? message : i);
+    }
 }
 
 /* [Challenge 5] Calculate Factorial Number
-*/
+ */
 // Could also check if n is negative => invalid for factorials
 function factorial(n) {
-  // 0! == 1
-  return n <= 1 ? 1 : n * factorial(n - 1);
+    // 0! == 1
+    return n <= 1 ? 1 : n * factorial(n - 1);
 }
 
 /* [Challenge 6] Switch Statements
@@ -58,7 +57,9 @@ Using a switch statement, write a function called sleep_in(weekday, vacation) wi
 Write a function called common(a, b) with these criteria: 
 Given 2 arrays of ints, a and b, return True if they have the same first element or they have the same last element. Both arrays will be length 1 or more. 
 */
-
+function common(a, b) {
+    return a[0] == b[0] || a[a.length - 1] == b[b.length - 1];
+}
 
 /* [Challenge 8] Object Keys and Values
 1. Create an object with two key-value pairs.
@@ -66,7 +67,6 @@ Given 2 arrays of ints, a and b, return True if they have the same first element
 3. Delete the first key-value pair in the object.
 4. Log that object to the console again. The first key-value pair should be gone.
 */
-
 
 /* [Challenge 9] Mutating Objects
 1. Create an array of objects with at least 2 key value pairs. The objects should all have the same keys, and the array should contain at least 3 objects.
@@ -76,9 +76,6 @@ Given 2 arrays of ints, a and b, return True if they have the same first element
 5. Prove the change worked by printing the second key in each object to the console, which should show the new value. Use bracket-notation to access the values this time.
 */
 
-
-
 /* [Challenge 10] Determine Runtime Complexity
-At the top your document for each challenge, state the runtime complexity for that function. 
+At the top your document for each challenge, state the runtime complexity for that function.
 */
-
