@@ -67,6 +67,13 @@ function common(a, b) {
 3. Delete the first key-value pair in the object.
 4. Log that object to the console again. The first key-value pair should be gone.
 */
+let groceries = {
+    store: "the market",
+    needs: ["milk", "bread", "eggs"],
+};
+console.log(groceries);
+delete groceries.store;
+console.log(groceries);
 
 /* [Challenge 9] Mutating Objects
 1. Create an array of objects with at least 2 key value pairs. The objects should all have the same keys, and the array should contain at least 3 objects.
