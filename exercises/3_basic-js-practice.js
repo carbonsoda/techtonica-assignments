@@ -57,11 +57,10 @@ function factorial(n) {
 Using a switch statement, write a function called sleep_in(weekday, vacation) with these criteria: The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
 */
 // Runtime: O(n)
-// If didn't pay attention to weekday lettercase, then O(1)
+// If didn't include toLowerCase(), then O(1)
 function sleep_in(weekday, vacation) {
     if (vacation) return true;
-
-    // toLowerCase() can be O(n) because of weekday str length
+    
     switch (weekday.toLowerCase()) {
         case "saturday":
         case "sunday":
