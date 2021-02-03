@@ -56,21 +56,24 @@ function factorial(n) {
 /* [Challenge 6] Switch Statements
 Using a switch statement, write a function called sleep_in(weekday, vacation) with these criteria: The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
 */
+// Runtime: O(n)
+// If didn't pay attention to weekday lettercase, then O(1)
 function sleep_in(weekday, vacation) {
     if (vacation) return true;
 
+    // toLowerCase() can be O(n) because of weekday str length
     switch (weekday.toLowerCase()) {
-      case "saturday":
-      case "sunday":
-        return true;
-      case "monday":
-      case "tuesday":
-      case "wednesday":
-      case "thursday":
-      case "friday":
-        return false;
-      default:
-        return "Invalid weekday";
+        case "saturday":
+        case "sunday":
+            return true;
+        case "monday":
+        case "tuesday":
+        case "wednesday":
+        case "thursday":
+        case "friday":
+            return false;
+        default:
+            return "Invalid weekday";
     }
 }
 
@@ -109,7 +112,7 @@ console.log(groceries);
 // Runtime: O(n)
 // The for loop runs n times, each loop is O(1) because direct lookups
 function mutateObjs(arr) {
-    for (let obj of arr) { 
+    for (let obj of arr) {
         console.log(obj.color);
         obj.color = "blue";
         console.log(obj["color"]);
