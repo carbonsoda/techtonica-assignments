@@ -56,7 +56,23 @@ function factorial(n) {
 /* [Challenge 6] Switch Statements
 Using a switch statement, write a function called sleep_in(weekday, vacation) with these criteria: The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.
 */
-// TODO: clarify weekday parameter
+function sleep_in(weekday, vacation) {
+    if (vacation) return true;
+
+    switch (weekday.toLowerCase()) {
+      case "saturday":
+      case "sunday":
+        return true;
+      case "monday":
+      case "tuesday":
+      case "wednesday":
+      case "thursday":
+      case "friday":
+        return false;
+      default:
+        return "Invalid weekday";
+    }
+}
 
 /* [Challenge 7] Accessing Arrays
 Write a function called common(a, b) with these criteria: 
