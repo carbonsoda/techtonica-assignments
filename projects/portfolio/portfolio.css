@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#overview {
+    padding:1px;
+    margin-top:20px;
+    margin-bottom: 40px;
+    border: 0px !important;
+}
+
+.card-header{
+    background:none;
+    font-size:25px;
+}
+
+.card-header#mainlinks{
+    color:blue;
+    border: 0px !important;
+    margin-bottom:-10px;
+}
+
+.card-header#mainlinks a:link{
+    text-decoration: none;
+}
+
+
+.card-header#project{
+    border-color:blueviolet!important;
+}
+
+#project-note {
+    font-size:small;
+    margin-bottom: 0;
+}
+#project-note a:link {
+    color:#A0C1D1;
+}
+#project-note a:hover,
+#project-note a:visited {
+    color:#B5B2C2;
+}
+
+
+.border-3{
+    border-color:aquamarine!important;
+}
+
+.fa-python {
+    color: green;
+}
+
+
+
+@media(min-width:1080px){
+    img {
+        width:300px
+    }
+    #overview {
+        width: 800px;
+    }
+}

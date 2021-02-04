@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/a0de938357.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+
+    <title>Avery Miller</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🐣</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/carbonsoda">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/milleravery/">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--OVERVIEW--->
+    <div class="container">
+        <div id="overview" class="card mx-auto">
+            <!--HEADER LINKS-->
+            <div class="row">
+                <!--Space-filler to make links align with title-->
+                <div class="col-5"></div>
+                <div class="col">
+                    <div id="mainlinks" class="card-header">
+                        <a href="https://github.com/carbonsoda">
+                            <i class="bi bi-github"></i>
+                        </a> 
+                        <a href="https://twitter.com/carbonsodas">
+                            <i class="bi bi-twitter"></i>
+                        </a> 
+                        <a href="https://www.linkedin.com/in/milleravery/">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--PHOTO + DESCRIPTION-->
+            <div class="row">
+
+                <div class="col-5">
+                    <img src="portrait3.png" class="img-fluid rounded-circle border border-3" />
+                </div>
+                
+                <!--TITLE/DESCRIPTION-->
+                <div class="col">
+                    <div class="card-body">
+                        <h3 class="card-title">Avery Miller</h3>
+                        <p class="card-text">
+                            Software Engineer @ Techtonica
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"> Curious about user and dev experiences </small>
+
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                My experiences in both IT and academia nurtured my love for
+                                people, my love for technology, and my love for learning. <br>
+                                This all
+                                comes together in one of my major goals: <br>
+                                My goal to create friendly experiences, for both users and developers.
+                                Ultimately technology can help everyone, and I want to help
+                                connect them to it.
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+            <!--PROJECT-1-->
+            <div class="col">
+                <div class="card">
+                    <div id="project" class="card-header">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://git.io/suandaHSP">
+                                Vignette Generator
+                            </a>
+                        </h5>
+                        <p class="card-text">
+                            Lab managers used this to simplify the preparation process for their human simulation
+                            paradigm studies (HSP). <br>
+                            It provided basic functionality (trimming, removing audio) in a Python GUI, powered by
+                            FFmpeg.
+                        </p>
+                        <p id="project-note">
+                            <a href="https://comdev.uconn.edu/">
+                                @ UConn Communication & Development lab
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--PROJECT-2-->
+            <div class="col">
+                <div class="card">
+                    <div id="project" class="card-header">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://git.io/langmatrix">LangMatrix</a>
+                        </h5>
+                        <p class="card-text">
+                            Research assistants used my app to efficiently compare language used in children literature
+                            and in parent-child
+                            playtime sessions.
+                            <br>
+                            It generated a dataframe that compared
+                            how unique words overlapped
+                            across 200+ book and video transcriptions.
+                        </p>
+                        <p id="project-note">
+                            <a href="https://comdev.uconn.edu/">
+                                @ UConn Communication & Development lab
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--PROJECT-3-->
+            <div class="col">
+                <div class="card">
+                    <div id="project" class="card-header">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://git.io/PBooks">Picture Book Object Coding</a>
+                        </h5>
+                        <p class="card-text">
+                            My drawing app was used for an experiment about object saliency in children's picture books.
+                        </p>
+                        <p class="card-text">
+                            Participants would identify and outline notable objects on each page in a book. Each
+                            object was then saved as a
+                            transparent image for
+                            later comparative analysis.
+                        </p>
+                        <p id="project-note">
+                            <a href="https://comdev.uconn.edu/">
+                                @ UConn Communication & Development lab
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
