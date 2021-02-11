@@ -1,0 +1,3 @@
+[submodule "projects/JS-HTML-game"]
+	path = projects/JS-HTML-game
+	url = https://github.com/carbonsoda/guess-my-number.git
