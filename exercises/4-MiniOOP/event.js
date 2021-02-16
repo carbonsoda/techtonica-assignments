@@ -1,3 +1,9 @@
+/**
+ * Lesson: https://github.com/Techtonica/curriculum/blob/main/javascript/first-js-oop-project.md
+ * Starter code included some jQuery and Event constructor
+ * + example events
+ */
+
 class Event {
     constructor(name, description) {
         this.name = name;
@@ -105,4 +111,5 @@ $(document).ready(function () {
     });
     // insert final html into #event...
     $('#event').html(htmlEvent);
+
 });
