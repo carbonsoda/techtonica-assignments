@@ -4,11 +4,17 @@
     Lesson: https://github.com/Techtonica/curriculum/blob/main/javascript/first-js-oop-project.md
     Provided boilerplate html + jquery link
 -->
+
 <head>
     <title></title>
     <!--  The jQuery library is a single JavaScript file, and you reference it with the HTML.-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <style>
+        .rangeInput {display:inline-block; margin:.4em}
+        input {width: 4em; display: block;}
+    </style>
 </head>
 
 <body>
@@ -16,6 +22,22 @@
     <ul id="event">
         <!-- EVENTS GET INSERTED HERE -->
     </ul>
+    <h2>Ticket finder:</h2>
+    <p>Find tickets that are between...</p>
+    <div class="rangeInput">
+        <label for="minRange">Min:</label>
+        <input type="number" min="0" step="10" id="minRange">
+        
+    </div>
+    <div class="rangeInput">
+        <label for="maxRange">Max:</label>
+        <input type="number" min="0" step="10" id="maxRange">
+    </div>
+    <button id="rangeBtn">Find tickets</button>
+    <ul id="ticketResults">
+        <!-- TICKET RESULTS GET INSERTED HERE -->
+    </ul>
+
 </body>
 <script src="./event.js"></script>
 

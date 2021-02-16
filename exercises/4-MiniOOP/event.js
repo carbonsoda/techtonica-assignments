@@ -25,8 +25,8 @@ class Event {
         return ticketsAll;
     }
 
-    searchTickets(minPrice, maxPrice) {
-        let eligibleTickets = 'Eligible tickets: ';
+    searchTickets(minPrice=0, maxPrice) {
+        let eligibleTickets = '';
 
         // counter for how many tickets are eligible
         let numEligible = 0;
@@ -38,6 +38,8 @@ class Event {
 
         if (numEligible == 0) {
             eligibleTickets = 'No tickets available.';
+        } else if (numEligible == this.availableTickets.length) {
+            eligibleTickets = 'All tickets fit this range.';
         }
 
         return eligibleTickets;
@@ -59,7 +61,6 @@ class Event {
 
         return `${cheapest.name} for $${cheapest.price}`;
     }
-
 }
 
 class TicketType {
@@ -92,14 +93,22 @@ eventObj3.addAvailableTickets("Orchestra", 300)
 eventObj3.addAvailableTickets("Mezzanine", 200)
 eventObj3.addAvailableTickets("Balcony", 100)
 
-// Testing that searchTickets works
-// console.log(eventObj1.searchTickets(100, 300) + " vampire");
-// console.log(eventObj1.searchTickets(300, 300) + " none");
-// console.log(eventObj1.searchTickets(400, 300) + " none");
 
-// console.log(eventObj2.searchTickets(0, 100) + " both");
-// console.log(eventObj2.searchTickets(-300, 300) + " both");
-// console.log(eventObj2.searchTickets(20, 25) + " General");
+
+function rangeResults(minRange, maxRange) {
+    let output = '';
+
+    if (!minRange && !maxRange) {
+        // do nothing
+        return output;
+    }
+
+    for (let event of eventArray) {
+        output += `<li> ${event.name}:`
+        +`<br>${event.searchTickets(minRange, maxRange)}</li>`;
+    }
+    return output;
+}
 
 
 $(document).ready(function () {
@@ -112,4 +121,11 @@ $(document).ready(function () {
     // insert final html into #event...
     $('#event').html(htmlEvent);
 
+    let htmlRange = '';
+    $('#rangeBtn').click(function () {
+        let min = $('#minRange').val();
+        let max = $('#maxRange').val();
+        htmlRange = rangeResults(min, max);
+        $('#ticketResults').html(htmlRange);
+    });
 });
