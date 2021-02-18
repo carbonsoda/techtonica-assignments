@@ -1,3 +1,6 @@
 [submodule "projects/JS-HTML-game"]
 	path = projects/JS-HTML-game
 	url = https://github.com/carbonsoda/guess-my-number.git
+[submodule "projects/eventonica"]
+	path = projects/eventonica
+	url = https://github.com/carbonsoda/eventonica.git
