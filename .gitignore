@@ -2,4 +2,4 @@
 *.code-workspace
 notes.md
 .vscode/
-
+jasmine.json
