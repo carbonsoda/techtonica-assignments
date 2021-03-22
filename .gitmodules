@@ -4,3 +4,6 @@
 [submodule "projects/eventonica-v1"]
 	path = projects/eventonica-v1
 	url = https://github.com/carbonsoda/eventonica-static.git
+[submodule "projects/eventonica-v2"]
+	path = projects/eventonica-v2
+	url = https://github.com/carbonsoda/eventonica.git
